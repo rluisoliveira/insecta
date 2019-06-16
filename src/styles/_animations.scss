@@ -1,0 +1,49 @@
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+//Borboletas
+@keyframes wing1 {
+  0% {
+    transform: skewx(0deg) scaley(1);
+  }
+  50% {
+    transform: skewx(10deg) scaley(0.9) translateX(-10px);
+  }
+
+  100% {
+    transform: skewx(0deg) scaley(1);
+  }
+}
+
+@keyframes wing2 {
+  0% {
+    transform: skewx(0deg) scaley(1);
+  }
+  50% {
+    transform: skewx(-10deg) scaley(0.9);
+  }
+
+  100% {
+    transform: skewx(0deg) scaley(1);
+  }
+}
+
+@keyframes voo {
+  0% {
+    transform: scaleX(-1) translateY(0rem);
+  }
+  50% {
+    transform: scaleX(-1) translateY(1rem);
+  }
+  100% {
+    transform: scaleX(-1) translateY(0rem);
+  }
+}

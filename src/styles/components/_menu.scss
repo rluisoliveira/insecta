@@ -1,0 +1,203 @@
+.Menu {
+  position: fixed;
+  top: 0;
+  z-index: 200; // Mudar
+  background: white;
+  color: darken($grey, 10%);
+  opacity: 0;
+
+  transform: translateY(-200vh);
+  transition: opacity 0.3s 0.8s, transform 0s 2s;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+
+  @media only screen and (max-width: $medium-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s, height 0.5s 0.5s;
+    //transition: opacity 0.5s 1s, transform 0.5s;
+
+    &:first-child {
+      background: #f5c99f;
+      height: 0;
+
+      .close {
+        opacity: 0;
+        transition: opacity 0.5s 0s, transform 0.5s;
+
+        cursor: pointer;
+
+        &:hover {
+          transform: rotate(180deg);
+          color: white;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      @media only screen and (max-width: $medium-width) {
+        margin: 1rem 0;
+      }
+      ul {
+        transform: translateX(-5rem);
+        width: 60%;
+
+        @media only screen and (max-width: $large-width) {
+          transform: translateX(1rem);
+          width: 70%;
+        }
+
+        @media only screen and (max-width: $medium-width) {
+          width: 100%;
+          text-align: center;
+          transform: none;
+        }
+        li {
+          font-size: 2.5rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+
+          opacity: 0;
+          transform: translateX(-1rem);
+
+          cursor: pointer;
+          transition: all 0.3s;
+
+          @media only screen and (max-width: $largest-width) {
+            font-size: 1.8rem;
+          }
+
+          @media only screen and (max-width: $medium-width) {
+            width: 100%;
+            transform: none;
+          }
+
+          &:not(:first-child) {
+            margin-top: 1.5rem;
+          }
+
+          &:after {
+            content: "";
+            display: inline-block;
+            background: #f5c99f;
+            height: 5px;
+            width: 0px;
+
+            transition: all 0.5s;
+          }
+
+          &:hover {
+            letter-spacing: 5px;
+            &:after {
+              width: 5vw;
+
+              @media only screen and (max-width: $largest-width) {
+                width: 3vw;
+              }
+
+              @media only screen and (max-width: $medium-width) {
+                width: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        opacity: 0;
+        transition: opacity 0.5s 0s;
+
+        @media only screen and (max-width: $medium-width) {
+          flex-direction: row;
+        }
+
+        &:before,
+        &:after {
+          content: "";
+          display: inline-block;
+          background: grey;
+          width: 1px;
+          height: 60px;
+          margin: 10px 0;
+
+          @media only screen and (max-width: $medium-width) {
+            width: 60px;
+            height: 1px;
+            margin: 0 10px;
+          }
+        }
+        li {
+          cursor: pointer;
+
+          @media only screen and (max-width: $medium-width) {
+            font-size: 1.4rem;
+          }
+
+          &:not(:first-child) {
+            margin-top: 0.5rem;
+
+            @media only screen and (max-width: $medium-width) {
+              margin-top: 0;
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+div[class*="active-menu"] {
+  transition: opacity 0.2s 0s, transform 0s 0s;
+  transform: translateY(0vh);
+  opacity: 1;
+  div {
+    &:first-child {
+      height: 100%;
+      transition: all 0.5s, height 0.5s 0s;
+
+      .close {
+        transition: opacity 0.5s 1.8s, transform 0.5s;
+
+        opacity: 1;
+      }
+    }
+
+    &:nth-child(2) {
+      ul {
+        @for $i from 1 through 7 {
+          .li-#{$i} {
+            transform: translateX(0rem);
+            transition: transform 0.3s #{0.5 + $i/6}s,
+              opacity 0.3s #{0.5 + $i/6}s, letter-spacing 0.3s;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      ul {
+        opacity: 1;
+        transition: opacity 0.5s 2s;
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.Espetaculo {
+  width: 100%;
+  height: 100vh;
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: $medium-width) {
+    padding: 0 0.5rem;
+  }
+
+  .borboleta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    &-1 {
+      transform: translate(0vw, -2rem) scale(0.3) rotate(-30deg);
+      polygon {
+        fill: $cyan;
+      }
+
+      @media only screen and (max-width: $large-width) {
+        transform: translate(-20vw, -2rem) scale(0.3) rotate(-30deg);
+      }
+    }
+
+    &-2 {
+      transform: translate(60vw, 2rem) scale(0.2) rotate(40deg);
+      polygon {
+        fill: $pink;
+      }
+
+      @media only screen and (max-width: $large-width) {
+        transform: translate(40vw, 2rem) scale(0.2) rotate(40deg);
+      }
+
+      @media only screen and (max-width: $medium-width) {
+        display: none;
+      }
+    }
+  }
+
+  .title-espec {
+    align-self: center;
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $grey;
+
+    @media only screen and (max-width: $largest-width) {
+      font-size: 2rem;
+    }
+  }
+
+  .p-espec {
+    width: 80%;
+    text-align: center;
+    font-size: 0.9rem;
+
+    @media only screen and (max-width: $large-width) {
+      width: 100%;
+    }
+  }
+
+  a {
+    color: $orange;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      color: $cyan;
+    }
+  }
+
+  .sinopse-cont {
+    width: 80%;
+
+    p {
+      text-align: center;
+    }
+  }
+}

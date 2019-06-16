@@ -1,0 +1,59 @@
+.borboletas {
+  width: 100%;
+  position: relative;
+  left: -5rem;
+  top: -2rem;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  animation: voo 2s ease-in-out infinite;
+
+  @media only screen and (max-width: $largest-width) {
+    left: -2.2rem;
+  }
+
+  @media only screen and (max-width: $medium-width) {
+    left: 0;
+    top: -7rem;
+
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  svg {
+    height: 28rem;
+    width: 28rem;
+
+    @media only screen and (max-width: $big-width) {
+      height: 25rem;
+      width: 25rem;
+    }
+
+    @media only screen and (max-width: $largest-width) {
+      height: 15rem;
+      width: 15rem;
+    }
+
+    @media only screen and (max-width: $large-width) {
+      height: 12rem;
+      width: 12rem;
+    }
+
+    @media only screen and (max-width: $medium-width) {
+      height: 20rem;
+      width: 20rem;
+    }
+
+    .left {
+      animation: wing1 2s linear infinite;
+      transform-origin: center right;
+    }
+
+    .right {
+      animation: wing2 2s linear infinite;
+      transform-origin: center right;
+    }
+  }
+}

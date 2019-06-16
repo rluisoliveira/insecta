@@ -1,0 +1,93 @@
+.Homepage {
+  z-index: 0;
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 3fr 6rem;
+  justify-content: center;
+  align-items: center;
+
+  background-size: 28px 28px;
+  background-image: linear-gradient(
+      to right,
+      rgba($grey, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba($grey, 0.1) 1px, transparent 1px);
+
+  overflow: hidden;
+
+  @media only screen and (max-width: $large-width) {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @media only screen and (max-width: $medium-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.6fr 4rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    transform: translateY(3rem);
+
+    @media only screen and (max-width: $medium-width) {
+      font-size: 0.9rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & > span {
+      color: $grey;
+      transform: translateX(-2rem) translateY(-1.5rem);
+
+      @media only screen and (max-width: $medium-width) {
+        align-self: center;
+        font-size: 0.9rem;
+        transform: translateX(-1rem) translateY(-1.5rem);
+      }
+    }
+
+    & > h1 {
+      @media only screen and (max-width: $medium-width) {
+        align-self: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .social {
+    height: 100%;
+    grid-column: 1 / -1;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      transform: translateY(7px);
+
+      li {
+        color: $grey;
+        font-size: 1.3rem;
+        margin: 0 1.5rem;
+
+        transition: all 0.5s;
+        cursor: pointer;
+
+        &:hover {
+          color: black;
+        }
+
+        @media only screen and (max-width: $medium-width) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

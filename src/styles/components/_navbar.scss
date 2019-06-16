@@ -1,0 +1,63 @@
+.Navbar {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 5rem;
+
+  padding: 0 2.5rem;
+
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: $small-width) {
+    padding: 0 1.5rem;
+  }
+
+  .button {
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #707070;
+    display: flex;
+    align-items: center;
+
+    height: 90%;
+    cursor: pointer;
+
+    transition: all 0.5s;
+
+    &__icon {
+      display: flex;
+      flex-direction: column;
+
+      margin-right: 8px;
+
+      &__bar {
+        background: #707070;
+        height: 4px;
+        width: 30px;
+
+        transition: all 0.5s;
+
+        &:first-child {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    &:hover {
+      //color: black;
+      .button__icon > .button__icon__bar {
+        //background: black;
+
+        &:first-child {
+          width: 20px;
+        }
+      }
+    }
+
+    &__text {
+    }
+  }
+}
