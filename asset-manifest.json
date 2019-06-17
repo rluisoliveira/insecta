@@ -1,14 +1,14 @@
 {
-  "main.css": "/insecta/static/css/main.437af28c.chunk.css",
-  "main.js": "/insecta/static/js/main.6ddbfdc0.chunk.js",
-  "main.js.map": "/insecta/static/js/main.6ddbfdc0.chunk.js.map",
+  "main.css": "/insecta/static/css/main.f72543b4.chunk.css",
+  "main.js": "/insecta/static/js/main.94caccd2.chunk.js",
+  "main.js.map": "/insecta/static/js/main.94caccd2.chunk.js.map",
   "runtime~main.js": "/insecta/static/js/runtime~main.16f01d99.js",
   "runtime~main.js.map": "/insecta/static/js/runtime~main.16f01d99.js.map",
   "static/js/2.7cff1888.chunk.js": "/insecta/static/js/2.7cff1888.chunk.js",
   "static/js/2.7cff1888.chunk.js.map": "/insecta/static/js/2.7cff1888.chunk.js.map",
   "index.html": "/insecta/index.html",
-  "precache-manifest.2371dce5e4a4eed49645bdc1de3dab11.js": "/insecta/precache-manifest.2371dce5e4a4eed49645bdc1de3dab11.js",
+  "precache-manifest.c035bb3dfb3c2ca5223984beec882fdd.js": "/insecta/precache-manifest.c035bb3dfb3c2ca5223984beec882fdd.js",
   "service-worker.js": "/insecta/service-worker.js",
-  "static/css/main.437af28c.chunk.css.map": "/insecta/static/css/main.437af28c.chunk.css.map",
+  "static/css/main.f72543b4.chunk.css.map": "/insecta/static/css/main.f72543b4.chunk.css.map",
   "static/media/_main.scss": "/insecta/static/media/zoosanto.480fb6e4.jpg"
 }
