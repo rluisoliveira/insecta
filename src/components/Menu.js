@@ -44,11 +44,11 @@ class Menu extends Component {
             <Link to="/sinopse" onClick={this.closeMenu}>
               <li className="li-3">Sinopse</li>
             </Link>
-            <Link to="/espetaculo" onClick={this.closeMenu}>
-              <li className="li-4">Objetivo</li>
-            </Link>
             <Link to="/tema" onClick={this.closeMenu}>
-              <li className="li-5">Tema</li>
+              <li className="li-4">Tema</li>
+            </Link>
+            <Link to="/espetaculo" onClick={this.closeMenu}>
+              <li className="li-5">Objetivo</li>
             </Link>
             <Link to="/ficha" onClick={this.closeMenu}>
               <li className="li-6">Ficha Técnica</li>

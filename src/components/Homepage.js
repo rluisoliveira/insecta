@@ -16,9 +16,12 @@ class Homepage extends Component {
       <div className="Homepage">
         <div className="content">
           <h1 className="titulo">Insecta</h1>
-          <span>Ricardo Luís Oliveira</span>
-          <span>Pós Graduação em Dança Contemporânea</span>
-          <span>ESMAE</span>
+          <span>Luís Oliveira</span>
+          <span>Teatro Municipal do Porto - Campo Alegre</span>
+          <span className="datas">
+            QUI 24 OUT 15H00 &nbsp; | &nbsp; SEX 25 OUT 19H00 &nbsp; | &nbsp;
+            SAB 26 OUT 17H00 &nbsp; | &nbsp; 2019
+          </span>
         </div>
         <div className="borboletas">
           <svg

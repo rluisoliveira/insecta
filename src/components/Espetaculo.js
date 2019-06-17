@@ -56,12 +56,12 @@ class Espetaculo extends Component {
           efeitos negativos associados ao risco de extinção das borboletas.
           <br />
           Para mais informações sobre a importância das borboletas monarca e o
-          que fazer para ajudar na sua sobrevivência visite
+          que fazer para ajudar na sua sobrevivência visite o site da &nbsp;
           <a
             target="_blank"
             href="https://www.worldwildlife.org/species/monarch-butterfly"
           >
-            o site da World Wild Life.
+            World Wild Life.
           </a>
         </p>
       </div>

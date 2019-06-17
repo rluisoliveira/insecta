@@ -11,6 +11,7 @@ class Agradecimentos extends Component {
             montagem deste espetáculo, principalmente a todos os intérpretes
             pela sua contínua dedicação e empenho. Obrigado à Laura Pinto pela
             criação deste website. Obrigado a todos os apoios listados em baixo.
+            Imagem: Nuno Tundela © 2019
           </p>
           <div className="apoios">
             <div className="apoio apoio-1" />

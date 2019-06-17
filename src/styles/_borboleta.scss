@@ -22,6 +22,10 @@
     align-items: flex-end;
   }
 
+  @media only screen and (max-height: 629px) and (max-width: $medium-width) {
+    top: -3rem;
+  }
+
   svg {
     height: 28rem;
     width: 28rem;

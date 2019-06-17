@@ -8,22 +8,37 @@ class Ficha extends Component {
           <h2>Ficha Técnica</h2>
           <ul>
             <li>
-              <span className="bold">Local:</span> ESMAE - Teatro Helena Sá e
-              Costa
+              <span className="bold">Criação e Coreografia:</span> Luís Oliveira
             </li>
             <li>
-              <span className="bold">Data:</span> 1 de Junho
-            </li>
-            <li>
-              <span className="bold">Coreografia:</span> Ricardo Luís Oliveira
-            </li>
-            <li>
-              <span className="bold">Intérpretes:</span> Catarina Alves, Hugo
+              <span className="bold">Interpretação:</span> Catarina Alves, Hugo
               Magalhães, Inês Alves, Inês Gonçalves, Liliana Mota e Luís
               Oliveira
             </li>
             <li>
-              <p className="bold">Música:</p>
+              <span>
+                <span className="bold">Figurinos:</span> Luís Oliveira
+              </span>
+            </li>
+            <li>
+              <span>
+                <span className="bold">Desenho de Luz:</span> Paulo Ribeiro e
+                Diogo Teixeira
+              </span>
+            </li>
+            <li>
+              <span>
+                <span className="bold">Técnico de Som:</span> André Norte
+              </span>
+            </li>
+            <li>
+              <span>
+                <span className="bold">Direção e Produção:</span> Cláudia Marisa
+                Oliveira e Luís Oliveira
+              </span>
+            </li>
+            <li>
+              <p className="bold">Seleção Musical:</p>
               <p className>
                 {" "}
                 Debussy: Reverie 68 - Second Storey & Appleblim Rework
@@ -38,17 +53,6 @@ class Ficha extends Component {
                 {" "}
                 Recomposed By Max Richter: Vivaldi, The Four Seasons: Spring 1
               </p>
-            </li>
-            <li>
-              <span>
-                <span className="bold">Figurinos:</span> Luís Oliveira
-              </span>
-            </li>
-            <li>
-              <span>
-                <span className="bold">Desenho de Luz:</span> Paulo Ribeiro e
-                Diogo Teixeira
-              </span>
             </li>
           </ul>
         </div>

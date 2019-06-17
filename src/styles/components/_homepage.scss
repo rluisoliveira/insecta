@@ -91,3 +91,13 @@
     }
   }
 }
+
+.datas {
+  @media only screen and (max-width: $largest-width) {
+    font-size: 0.7rem !important;
+  }
+
+  @media only screen and (max-width: $medium-width) {
+    font-size: 0.6rem !important;
+  }
+}

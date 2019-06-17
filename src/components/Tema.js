@@ -84,14 +84,11 @@ class Tema extends Component {
           <div>
             <h1 className="h1 h1-1">Fase da Lagarta</h1>
             <p className="fase-1__text">
-              Um dos grandes objetivos deste tema é sensibilizar o público para
-              o estado de conservação desta espécie animal. A borboleta monarca
-              encontra-se, atualmente, na lista de espécies em vias de extinção,
-              apesar de não ser das mais ameaçadas nem das que se encontra em
-              maior risco de extinção, por agora. Estudos recentes têm revelado
-              que o número de espécimes na natureza tem vindo a decrescer, e
-              estimam ainda que vão desaparecer por completo num período de 20 a
-              25 anos.
+              A fase da lagarta é a principal fase de crescimento da borboleta.
+              Apesar das lagartas apresentarem um movimento lento, a sua
+              deslocação é quase sempre contínua, fazendo poucas e breves
+              paragens. Nesta fase, o movimento ondulatório e arrastado do corpo
+              da lagarta é bastante característico da sua deslocação.
             </p>
           </div>
           <div className="fase-foto">
