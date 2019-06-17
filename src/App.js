@@ -19,7 +19,7 @@ class App extends Component {
         <Navbar />
         <Menu />
         <Switch>
-          <Route exact path="/" component={Homepage} />
+          <Route exact path="/insecta" component={Homepage} />
           <Route exact path="/biografia" component={Biografia} />
           <Route exact path="/espetaculo" component={Espetaculo} />
           <Route exact path="/sinopse" component={Sinopse} />

@@ -35,7 +35,7 @@ class Menu extends Component {
         </div>
         <div>
           <ul>
-            <Link to="/" onClick={this.closeMenu}>
+            <Link to="/insecta" onClick={this.closeMenu}>
               <li className="li-1">Homepage</li>
             </Link>
             <Link to="/biografia" onClick={this.closeMenu}>
