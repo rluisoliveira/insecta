@@ -19,13 +19,41 @@ class App extends Component {
         <Navbar />
         <Menu />
         <Switch>
-          <Route exact path="/insecta" component={Homepage} />
-          <Route exact path="/biografia" component={Biografia} />
-          <Route exact path="/espetaculo" component={Espetaculo} />
-          <Route exact path="/sinopse" component={Sinopse} />
-          <Route exact path="/tema" component={Tema} />
-          <Route exact path="/ficha" component={Ficha} />
-          <Route exact path="/agradecimentos" component={Agradecimentos} />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/"}
+            component={Homepage}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/biografia"}
+            component={Biografia}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/espetaculo"}
+            component={Espetaculo}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/sinopse"}
+            component={Sinopse}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/tema"}
+            component={Tema}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/ficha"}
+            component={Ficha}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/agradecimentos"}
+            component={Agradecimentos}
+          />
         </Switch>
       </div>
     );
